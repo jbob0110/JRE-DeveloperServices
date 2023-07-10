@@ -82,7 +82,6 @@ window.onload = () => {
           "project":{  "key": project },
           "parent":{ "key": jiraKey},
           "issuetype":{  "name":"Sub-task"},
-          
           "summary":pkSummary,
           "description":pkDescription
         }
@@ -317,6 +316,7 @@ window.onload = () => {
             "issuetype": { "name":"Sub-task" },
             "summary":"Project Kickoff",
             "description":"- List the general planned code changes, and give any helpful context about why. \n- List APIs to update or create. \n- List expected test cases (how will we verify this?). Check to see if test data that is needed is available or needs to be created, especially if it will require outside help to create. \n- Anything additional the developer thinks needs to be shared with the team.",
+            "components":[{ "name": gComp}],
             "customfield_22100": gAsset,
             "customfield_22101": gAlignTeam,
           }
