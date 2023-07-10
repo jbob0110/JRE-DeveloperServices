@@ -1,7 +1,25 @@
+.grid-container {
+   display: grid;
+   width: 366.02px;
+   grid-template-rows: auto;
+   background-color: whitesmoke;
+   padding: 5px;
+   border-radius: 0px;
+   border: 1px solid #C74634;
+   justify-items: stretch;
+}
+ 
+.rightNav {
+   grid-column: 3 / span 1;
+   grid-row: 2 / span 3;
+   padding: 10px;
+   width: auto;
+}
+ 
 .title {
    grid-column: 1 / span 3;
    grid-row: 1;
-   background-color: green;
+   background-color: #C74634;
    padding: 10px;
    border-radius: 10px;
    color: whitesmoke;
@@ -9,20 +27,36 @@
    font-size: 28px;
    font-family: serif ;
 }
- 
+
+.optionsTitle {
+   background-color: #C74634;
+   padding: 10px;
+   border-radius: 10px;
+   color: whitesmoke;
+   text-align: center;
+   font-size: 28px;
+   font-family: serif ;
+}
+
+.optionsContainer {
+   align-content: center;
+}
 .content {
    grid-column: 1 / span 2;
    grid-row: 2 / span 3;
    padding: 1px;
    width: auto;
+   align-items: center;
+   border-radius: 12px;
+   margin-bottom: 7px;
 }
 
 .content select {
-   width: 150px;
+   width: 111px;
 }
 
 .tab {
-   background-color: whitesmoke;
+   background-color: white;
    max-height: 100%;
    padding: 10px;
 }
@@ -30,26 +64,28 @@
 /* Style the buttons inside the tab */
 .tab input{
    display: block;
-   background-color: green;
+   background-color: #C74634;
    color: white;
    padding: 6px 6px;
    width: 100%;
-   outline: 1px solid green;
+   outline: 1px solid #C74634;
    text-align: center;
    cursor: pointer;
-   /* transition: 0.1s; */
+   transition: 0.1s;
    align-items: center;
+   border-radius: 12px;
+   margin-bottom: 7px;
 }
    
 /* Change background color of buttons on hover */
 .tab input:hover {
-   background-color: darkgoldenrod;
+   background-color: #312D2A;
 }
    
 /* Create an active/current "tab button" class */
 .tab input.active {
-   background-color: goldenrod;
-   border: 3px solid darkgoldenrod;
+   background-color: #312D2A;
+   border: 3px solid #312D2A;
 }
    
 /* Style the tab content */
@@ -61,16 +97,13 @@
 
 /* loader content */
 .loader {
-   grid-column: 1 / span 3;
-   border: 13px solid whitesmoke;
-   border-top: 13px solid #159b41;
+   border: 13px solid #312D2A;
+   border-top: 13px solid #C74634;
    border-radius: 50%;
-   width: 75px;
-   height: 75px;
+   width: 50px;
+   height: 50px;
+   margin: auto;
    animation: spin 2s linear infinite;
-   text-align: center;
-   /* margin-left: 100px; */
-   /* margin-top: 45px; */
    display: none;
 }
    
